@@ -1,3 +1,8 @@
+# mod_cloudflare Railgun for Northern Lights #
+This version of the mod_cloudflare Easy Apache extension has been modified for use by the Northern Lights Network for Railgun services.
+
+If you are looking for the mod_cloudflare for your server see: https://github.com/cloudflare/mod_cloudflare and do not use this fork as it will likely not work within your enviornment.
+
 # mod_cloudflare for Apache #
 Copyright CloudFlare Inc. 2013
 
