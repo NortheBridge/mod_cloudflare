@@ -1,0 +1,20 @@
+## Installation Instructions for Northern Lights Servers ##
+
+Whether utilizing NLMS or another one of the Northern Lights Network Edge Servers, the following installation instructions apply
+universally (from CloudFlare's website):
+
+bash <(curl -s https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/master/EasyApache/installer.sh) HOST_API_KEY 'YOUR_COMPANY_NAME'
+
+PLEASE NOTE: 'YOUR_COMPANY_NAME' accepts values without underscores and the API key can be obtained from the partner portal.
+
+Once the installation is completed you can check the ensure the server has mod_cloudflare installed by running:
+
+# cat /usr/local/cpanel/etc/cloudflare.json
+
+This will generate a report within the server shell if it is installed correctly. Otherwse reach out to the System Admin Group for further assistance.
+
+## These Instructions Have Been Modified ##
+
+These instructions are only applicable to Northern Lights Servers and Railguns. DO NOT attempt to use these instructions in a different enviornment.
+
+CloudFlare Official Instructions can be found at CloudFlare Support: https://www.cloudflare.com/resources-downloads#cpanel
