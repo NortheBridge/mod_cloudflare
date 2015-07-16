@@ -1,10 +1,11 @@
 # mod_cloudflare Railgun for Northern Lights #
-This version of the mod_cloudflare Easy Apache extension has been modified for use by the Northern Lights Network for Railgun services.
+This version of the mod_cloudflare extension for Easy Apache has been modified for use on the Northern Lights Network and includes specific modifications to the install script to reflect locations of Northern Lights Network Edge Railguns. This script should not be used in other enviornments.
 
-If you are looking for the mod_cloudflare for your server see: https://github.com/cloudflare/mod_cloudflare and do not use this fork as it will likely not work within your enviornment.
+If you are looking for the mod_cloudflare extension for EasyApache from which this was forked from: https://github.com/cloudflare/mod_cloudflare ane follow the instructions CloudFlare provides to install.
 
 # mod_cloudflare for Apache #
 Copyright CloudFlare Inc. 2013
+Script modified by the Consortium of the Infinity Star. 2015
 
 ## mod_cloudflare.c ##
 
@@ -15,7 +16,20 @@ To install, follow the instructions on:
     
 No further configuration is needed. However, if you wish to override the default values, the following directives are exposed:
 
+### Adding Additional Railguns ###
+
+Since the Northern Lights Network utilizes Cloud Linux primarily, adding new Railguns require direct modification of the mod_cloudflare.c file.
+
+Railguns should be added after the CloudFlare IPv4 Trusted Proxies and prior to the CloudFlare IPv6 Trusted Proxies. All Railguns should be added to the following section:
+    /* Northern Lights Railguns */
+    
+PLEASE NOTE THAT THIS IS THE MASTER BRANCH INTENDED FOR NLMS. Create new branches and modify installation scripts as needed for additional Northern Lights Network Railguns.
+
+INFORMATION BEYOND THIS POINT IS AVAILABLE FROM THE ORIGINAL CLOUDFLARE EASY APACHE PAGE.
+
 ### CloudFlareRemoteIPHeader ###
+
+PLEASE NOTE: THE INSTRUCTIONS BELOW AREN'T APPLICABLE TO CLOUDLINUX RAILGUN INSTALLATIONS. SEE THE ABOVE FOR ADDING NEW RAILGUNS TO THE NORTHERN LIGHTS NETWORK.
 
 This specifies the header which contains the original IP. Default:
 
