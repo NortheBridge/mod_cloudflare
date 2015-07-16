@@ -58,7 +58,7 @@ static const char* CF_DEFAULT_TRUSTED_PROXY[] = {
   "104.16.0.0/12",
   "172.64.0.0/13",
 /* Trusted Northern Lights Railguns */  
-  CloudFlareRemoteIPTrustedProxy 127.0.0.1 
+  "127.0.0.1", 
 /* IPv6 Address Ranges */
   "2400:cb00::/32",
   "2606:4700::/32",
