@@ -3,7 +3,7 @@
 Whether utilizing NLMS or another one of the Northern Lights Network Edge Servers, the following installation instructions apply
 universally (from CloudFlare's website):
 
-bash <(curl -s https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/master/EasyApache/installer.sh) HOST_API_KEY 'YOUR_COMPANY_NAME'
+bash <(curl -s https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/Beta-TestBranch/EasyApache/installer.sh) HOST_API_KEY 'YOUR_COMPANY_NAME'
 
 PLEASE NOTE: 'YOUR_COMPANY_NAME' accepts values without underscores and the API key can be obtained from the partner portal.
 
