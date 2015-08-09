@@ -1,16 +1,16 @@
 ### Alpha-DevBranch ###
-You are in the Alpha Development Branch, Phase III in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint.
+***You are in the Alpha Development Branch, Phase III in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint.***
 
 # mod_cloudflare for Northern Lights Railguns #
-mod_cloudflare for Northern Lights Railguns is a modified version of the original mod_cloudflare EasyApache extension for use exclusively with the Northern Lights Network Edge Relay Servers and is likely to be incompaitble with other network setups due to Northern Lights' Network's unqiue design. Please do not use this in your own enviornment. It is recommended that you fork your own mod_cloudflare directly from the CloudFlare team. We appreciate contributions to help better the mod_cloudflare extension for the Northern Lights Railguns as with any open sourced project.
+mod_cloudflare for Northern Lights Railguns is a modified version of the original mod_cloudflare EasyApache extension for use exclusively with the Northern Lights Network Edge Relay Servers and is likely to be incompaitble with other network setups due to Northern Lights' Network's unqiue design. **Please do not use this in your own enviornment. It is recommended that you fork your own mod_cloudflare directly from the CloudFlare team.** *We appreciate contributions to help better the mod_cloudflare extension for the Northern Lights Railguns as with any open sourced project.*
 
 ## Get mod_cloudflare ##
 If you are looking for the mod_cloudflare extension for EasyApache from which this was forked from please visit: https://github.com/cloudflare/mod_cloudflare ane follow the instructions CloudFlare provides to install.
 
 ### mod_cloudflare for Apache ###
-Copyright CloudFlare Inc. 2013. [i]This script has been modified by the Consortium of the Infinity Star for use with the Northern Lights network.
+Copyright CloudFlare Inc. 2013. *This script has been modified by the Consortium of the Infinity Star for use with the Northern Lights network.*
 
-Script modifications designed explictly for Network Edge Servers utilizing CloudLinux/RHEL/CentOS. Functionality on non-RHEL based systems is not guarnteed. Since the Northern Lights Network does not consist of any other Linux distributions we will not pursue further development for non-RHEL. Non-RHEL solutions may however still exist.
+**Script modifications designed explictly for Network Edge Servers utilizing CloudLinux/RHEL/CentOS.** Functionality on non-RHEL based systems is not guarnteed. Since the Northern Lights Network does not consist of any other Linux distributions we will not pursue further development for non-RHEL. Non-RHEL solutions may however still exist.
 
 ## mod_cloudflare.c ##
 
@@ -30,28 +30,28 @@ In order to create an efficent and proven workflow, the following branches exist
     [5]Washington-Network
     [6]master
     
-master: is the directly forked source code of mod_cloudflare from CloudFlare. This branch will be where any future mod_cloudflare updates are pulled to first;
-Washington-Network: is the branch containing the specific configurations for the Northern Lights Washington SoftLayer Network;
-Providence-Network: is the branch containing the specific configurations for the Northern Lights Network Seattle SoftLayer network;
-Alpha-DevBranch: is the branch containing the combined configuration of any Network Branches;
-Beta-TestBranch: is the branch used for testing changes to configurations before final deployment across the Northern Lights SoftLayer footprint;
-Delta-Release: is the branch for which all approved changes are merged into before being queried and downloaded by the Northern Lights Network during a "Correlative Update."
+**master:** is the directly forked source code of mod_cloudflare from CloudFlare. This branch will be where any future mod_cloudflare updates are pulled to first;
+**Washington-Network:** is the branch containing the specific configurations for the Northern Lights Washington SoftLayer Network;
+**Providence-Network:** is the branch containing the specific configurations for the Northern Lights Network Seattle SoftLayer network;
+**Alpha-DevBranch:** is the branch containing the combined configuration of any Network Branches;
+**Beta-TestBranch:** is the branch used for testing changes to configurations before final deployment across the Northern Lights SoftLayer footprint;
+**Delta-Release:** is the branch for which all approved changes are merged into before being queried and downloaded by the Northern Lights Network during a "Correlative Update."
 
 ### Adding Additional Railguns ###
 
-Since the Northern Lights Network utilizes CloudLinux primarily, adding new Railguns require direct modification of the mod_cloudflare.c file.
+Since the Northern Lights Network utilizes CloudLinux primarily, adding new Railguns **require direct modification of the mod_cloudflare.c file.**
 
 Railguns should be added after the CloudFlare IPv4 Trusted Proxies and prior to the CloudFlare IPv6 Trusted Proxies. All Railguns should be added to the following section:
     /* Northern Lights Railguns */
     
-PLEASE NOTE: This is the Alpha Development Branch. When adding new Railguns from one of the "Network Branches" as defined below, they should be merged into the Alpha Development Branch to ensure continuity. The following are "Network Branches:"
+*PLEASE NOTE:* This is the Alpha Development Branch. When adding new Railguns from one of the "Network Branches" as defined below, they should be merged into the Alpha Development Branch to ensure continuity. The following are "Network Branches:"
 
     [1]Washington-Network (Washington, D.C.)
     [2]Providence-Network (Seattle and Vancouver - Providence Base)
     
 Network Branches are labled with their Consortium name and detailed with their SoftLayer location.
 
-INFORMATION BEYOND THIS POINT IS AVAILABLE FROM THE ORIGINAL CLOUDFLARE EASY APACHE PAGE.
+*INFORMATION BEYOND THIS POINT IS AVAILABLE FROM THE ORIGINAL CLOUDFLARE EASY APACHE PAGE.*
 
 ### CloudFlareRemoteIPHeader ###
 
