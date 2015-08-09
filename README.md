@@ -1,4 +1,4 @@
-### Beta-TestBranch ###
+### Delta-Release ###
 ***You are in the Delta Release Branch, Phase V in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint. This branch is the branch pushed out to Northern Lights Edge Servers following final code review***
 
 # mod_cloudflare for Northern Lights Railguns #
