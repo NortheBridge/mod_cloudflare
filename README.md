@@ -1,5 +1,5 @@
 ### Master Branch ###
-***You are in the Master Branch, Phase I in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint.***
+***You are in the Master Branch, Phase V (Final Phase) in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint.***
 
 # mod_cloudflare for Northern Lights Railguns #
 mod_cloudflare for Northern Lights Railguns is a modified version of the original mod_cloudflare EasyApache extension for use exclusively with the Northern Lights Network Edge Relay Servers and is likely to be incompaitble with other network setups due to Northern Lights' Network's unqiue design. **Please do not use this in your own enviornment. It is recommended that you fork your own mod_cloudflare directly from the CloudFlare team.** *We appreciate contributions to help better the mod_cloudflare extension for the Northern Lights Railguns as with any open sourced project.*
@@ -30,12 +30,12 @@ In order to create an efficent and proven workflow, the following branches exist
     [5]Washington-Network
     [6]master
     
-**master:** is the directly forked source code of mod_cloudflare from CloudFlare. This branch will be where any future mod_cloudflare updates are pulled to first;
+**master:** is the branch for which all approved changes are merged into from "Delta-Release" before being queried for download by the Northern Lights Network during a "Correlative Update.";
 **Washington-Network:** is the branch containing the specific configurations for the Northern Lights Washington SoftLayer Network;
 **Providence-Network:** is the branch containing the specific configurations for the Northern Lights Network Seattle SoftLayer network;
-**Alpha-DevBranch:** is the branch containing the combined configuration of any Network Branches;
-**Beta-TestBranch:** is the branch used for testing changes to configurations before final deployment across the Northern Lights SoftLayer footprint;
-**Delta-Release:** is the branch for which all approved changes are merged into before being queried and downloaded by the Northern Lights Network during a "Correlative Update."
+**Alpha-DevBranch:** is the branch containing the combined configuration of any Network Branches and is considered the working 'Development Branch';
+**Beta-TestBranch:** is the branch used for testing changes to configurations and ironing out any possible bugs that may have been introduced during development code changes;
+**Delta-Release:** is the branch for which all approved changes are merged into for final code review before being merged with the "master" for deployment to all servers.
 
 ### Adding Additional Railguns ###
 
