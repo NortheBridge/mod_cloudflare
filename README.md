@@ -27,7 +27,7 @@ In order to create an efficent and proven workflow, the following branches exist
     [2]Beta-TestBranch
     [3]Delta-Release
     [4]Providence-Network
-    [5]Washington-Network
+    [5]Auradon-Network
     [6]master
     
 **master:** is the branch for which all approved changes are merged into from "Delta-Release" before being queried for download by the Northern Lights Network during a "Correlative Update.";
@@ -46,7 +46,7 @@ Railguns should be added after the CloudFlare IPv4 Trusted Proxies and prior to 
     
 *PLEASE NOTE:* This is the Alpha Development Branch. When adding new Railguns from one of the "Network Branches" as defined below, they should be merged into the Alpha Development Branch to ensure continuity. The following are "Network Branches:"
 
-    [1]Washington-Network (Washington, D.C.)
+    [1]Auradon-Network (Washington, D.C.)
     [2]Providence-Network (Seattle and Vancouver - Providence Base)
     
 Network Branches are labled with their Consortium name and detailed with their SoftLayer location.
