@@ -60,9 +60,11 @@ static const char* CF_DEFAULT_TRUSTED_PROXY[] = {
   "199.27.128.0/21",
 /* Trusted Northern Lights Railguns Private IP Edges */  
   "127.0.0.1",
-  "10.28.11.140",
+  "10.100.55.130",
+  "10.100.55.132",
 /* Trusted Northern Lights Railgun Public IP Edges */
-  "50.23.152.2",
+  "208.43.237.202",
+  "208.43.237.203",
 /* IPv6 Address Ranges */
   "2400:cb00::/32",
   "2606:4700::/32",
