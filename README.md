@@ -1,5 +1,5 @@
-### Master Branch ###
-***You are in the Master Branch, Phase V (Final Phase) in development and deployment of mod_cloudflare to the Northern Lights SoftLayer Footprint.***
+### LWDev Branch ###
+***You are in the LWDev Branch, a development and deployment branch of mod_cloudflare for the LWDev Enviornment only. This branch should not be deployed anywhere else and is temporary.***
 
 # mod_cloudflare for Northern Lights Railguns #
 mod_cloudflare for Northern Lights Railguns is a modified version of the original mod_cloudflare EasyApache extension for use exclusively with the Northern Lights Network Edge Relay Servers and is likely to be incompaitble with other network setups due to Northern Lights' Network's unqiue design. **Please do not use this in your own enviornment. It is recommended that you fork your own mod_cloudflare directly from the CloudFlare team.** *We appreciate contributions to help better the mod_cloudflare extension for the Northern Lights Railguns as with any open sourced project.*
