@@ -13,9 +13,9 @@ if [ ! -d "$INSTALL_DIR" ]; then
 fi
 
 # Download & tar mod_cloudflare.c
-mkdir mod_cloudflare && cd mod_cloudflare && wget "https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/master/mod_cloudflare.c" && cd ..
+mkdir mod_cloudflare && cd mod_cloudflare && wget "https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/LWDev/mod_cloudflare.c" && cd ..
 tar -cvzf $INSTALL_DIR/ModCloudflare.pm.tar.gz mod_cloudflare/mod_cloudflare.c
 # Download ModCloudflare.pm into cPanel directory
-wget -O $INSTALL_DIR/ModCloudflare.pm https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/master/EasyApache/ModCloudflare.pm
+wget -O $INSTALL_DIR/ModCloudflare.pm https://raw.githubusercontent.com/NortheBridge/mod_cloudflare/LWDev/EasyApache/ModCloudflare.pm
 # Remove leftover files
 rm -rf mod_cloudflare/
